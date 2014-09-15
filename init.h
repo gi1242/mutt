@@ -3458,6 +3458,7 @@ const struct mapping_t SortMethods[] = {
   { "to",		SORT_TO },
   { "score",		SORT_SCORE },
   { "spam",		SORT_SPAM },
+  { "label",		SORT_LABEL },
   { NULL,               0 }
 };
 
@@ -3477,6 +3478,7 @@ const struct mapping_t SortAuxMethods[] = {
   { "to",		SORT_TO },
   { "score",		SORT_SCORE },
   { "spam",		SORT_SPAM },
+  { "label",		SORT_LABEL },
   { NULL,               0 }
 };
 
