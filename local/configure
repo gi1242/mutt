@@ -1,0 +1,20 @@
+#! /bin/bash
+
+configure --prefix=$PREFIX \
+    --disable-dependency-tracking \
+    --disable-debug		\
+    --enable-fcntl		\
+    --enable-hcache		\
+    --enable-gpgme \
+    --enable-imap	    \
+    --enable-smtp	    \
+    --enable-pop	    \
+    --with-curses		\
+    --with-gnutls		\
+    --with-gss	    \
+    --with-idn	    \
+    --without-mixmaster	\
+    --with-sasl	    \
+    --without-gdbm --without-bdb --without-qdbm
+    # --enable-compressed \
+    # --enable-inodesort	    \
