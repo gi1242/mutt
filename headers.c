@@ -244,7 +244,7 @@ int mutt_label_message(HEADER *hdr)
 		strncpy(buf, hdr->env->x_label, LONG_STRING);
 	}
 
-	mutt_get_field("Label: ", buf, sizeof(buf), 0 /* | M_CLEAR */);
+	mutt_get_field("Label: ", buf, sizeof(buf), 0 /* | MUTT_CLEAR */);
 	new = buf;
 	SKIPWS(new);
 	if (*new == '\0')
@@ -260,7 +260,7 @@ int mutt_label_message(HEADER *hdr)
 				if (label_message(HDR_OF(i), new)) {
 					++changed;
 					mutt_set_flag(Context, HDR_OF(i),
-						M_TAG, 0);
+						MUTT_TAG, 0);
 				}
 		}
 	}
